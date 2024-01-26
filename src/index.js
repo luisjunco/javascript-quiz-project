@@ -28,11 +28,21 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // Array with the quiz questions
   const questions = [
-    new Question("What is 2 + 2?", ["3", "4", "5", "6"], "4", 1),
-    new Question("What is the capital of France?", ["Miami", "Paris", "Oslo", "Rome"], "Paris", 1),
-    new Question("Who created JavaScript?", ["Plato", "Brendan Eich", "Lea Verou", "Bill Gates"], "Brendan Eich", 2),
-    new Question("What is the mass–energy equivalence equation?", ["E = mc^2", "E = m*c^2", "E = m*c^3", "E = m*c"], "E = mc^2", 3),
-    // Add more questions here
+
+    new Question("What's the name of the standard JavaScript is based on?", ["TypeScript", "CoffeeScript", "Python", "ECMAScript"], "ECMAScript", 1),
+
+    new Question("What's the meaning of NaN", ["New Assignment Notation", "Numeric Assignment Notation", "Nope... absolutely Nonsense", "Not a Number"], "Not a Number", 1),
+
+    new Question("10 + '5'", ["15", "10", "NaN", "'105'"], "'105'", 1),
+
+    new Question("Non primitive data types are copied by....", ["by value", "by reference"], "by reference", 2),
+    
+    new Question("Which of the following methods mutates the original array?", ["map()", "filter()", "reduce()", "sort()"], "sort()", 2),
+
+    new Question("Is this True or False.... 0.1 + 0.2 === 0.3", ["True", "False"], "False", 3),
+
+    new Question("Which of these options will create a shallow copy?", ["const copy = [...originalArr]", "const copy = structuredClone(originalArr)", "const copy = JSON.parse(JSON.stringify(originalArr))"], "const copy = [...originalArr]", 3),
+
   ];
   const quizDuration = 120; // 120 seconds (2 minutes)
 
